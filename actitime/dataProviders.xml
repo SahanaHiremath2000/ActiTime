@@ -1,0 +1,22 @@
+
+
+<suite name="Suite" parallel="tests">
+  <parameter name="url" value="http://localhost:8080/login.do"/>
+  <test thread-count="5" name="TestValidData">
+
+  <parameter name="un" value="admin"/>
+  <parameter name="pwd" value="manager"/>
+    <classes>
+      <class name="com.actitime.basics.LearnDDT"/>
+    
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="TestInvalidData">
+  <parameter name="un" value="Dinga"/>
+  <parameter name="pwd" value="Dingi"/>
+    <classes>
+      <class name="com.actitime.basics.LearnDDT"/>
+   
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
