@@ -21,6 +21,8 @@ public class AddTask {
 		//div[text()='Select Customer and Project to Add Tasks for']/following::button[text()='Our Company']
 		
 		driver.findElement(By.xpath("//div[text()='Select Customer and Project to Add Tasks for']/following::button[text()='Our Company']")).click();
+	
+	System.out.println("task added");
 	}
 
 }
